@@ -1,0 +1,92 @@
+{
+  "_args": [
+    [
+      "react-d3-donut@1.1.2",
+      "/Users/emily/Projects/EA"
+    ]
+  ],
+  "_from": "react-d3-donut@1.1.2",
+  "_id": "react-d3-donut@1.1.2",
+  "_inBundle": false,
+  "_integrity": "sha512-NN6uFPiSYfh+859QNBa5UfGUZlORGJF4r8RPS1HJmF3MserVrpU8YLC1MkRIENJLmIrnhk7v0sNmhBE1DNnEZg==",
+  "_location": "/react-d3-donut",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-d3-donut@1.1.2",
+    "name": "react-d3-donut",
+    "escapedName": "react-d3-donut",
+    "rawSpec": "1.1.2",
+    "saveSpec": null,
+    "fetchSpec": "1.1.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-d3-donut/-/react-d3-donut-1.1.2.tgz",
+  "_spec": "1.1.2",
+  "_where": "/Users/emily/Projects/EA",
+  "author": "",
+  "dependencies": {
+    "d3-interpolate": "^1.3.2",
+    "d3-selection": "^1.3.2",
+    "d3-shape": "^1.2.2",
+    "d3-transition": "^1.1.3",
+    "prop-types": "^15.6.2"
+  },
+  "description": "A react donut chart component using d3",
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.5.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^2.0.0",
+    "node-sass-chokidar": "^1.3.3",
+    "npm-run-all": "^4.1.3",
+    "nwb": "0.23.x",
+    "nwb-sass": "^0.9.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "keywords": [
+    "react-component",
+    "visualisation",
+    "donut chart",
+    "d3"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "name": "react-d3-donut",
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "repository": "",
+  "scripts": {
+    "build": "npm-run-all build-css build-js",
+    "build-css": "node-sass-chokidar src/assets/styles/ -o src/assets/styles",
+    "build-js": "nwb build-react-component --copy-files",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "deploy": "gh-pages -d demo/dist",
+    "lint": "yarn eslint src",
+    "predeploy": "yarn build",
+    "prepublishOnly": "npm run build",
+    "start": "npm-run-all -p build-css start-js",
+    "start-js": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server",
+    "watch-css": "npm run build-css && node-sass-chokidar src/assets/styles/ -o src/assets/styles --watch --recursive"
+  },
+  "version": "1.1.2"
+}
